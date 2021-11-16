@@ -1,0 +1,74 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: #5CD17F;
+}
+
+.apoio_listagem {
+    height: 100%;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    background-color: #55C276;
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5vw;
+}
+
+.tabela_consultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 0.4vw solid #8BC5E5;
+    border-radius: 1.5vw;
+}
+
+
+/* Cabeçalho */
+
+.tabela_consultas_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tabela_consultas_cabecalho tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vw 0;
+    background-color: #3B8752;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 1.5vw;
+}
+
+
+/* Corpo da Tabela */
+
+.tabela_consultas_corpo {
+    width: 90%;
+    margin: 1vw 3vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabela_consultas_corpo tr {
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #41A57D;
+    border-radius: 1.5vw;
+    padding: 20px;
+}
+
+.tabela_consultas_corpo tr td {
+    max-width: 25%;
+    font-size: 1.4vw;
+}

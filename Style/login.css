@@ -1,0 +1,102 @@
+    /* Tags frequentes */
+    
+    body {
+        background-color: #5CD17F;
+    }
+    
+    .apoio_login {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vw;
+        margin-top: 3vw;
+    }
+    /* Inicio Usuarios */
+    
+    .login_bloco_usuarios {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login_apoio_usuarios {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .perfis_exemplos {
+        width: 90%;
+        height: 20%;
+        margin: 0.2vw 0;
+        background-color: #55C276;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 0 10%;
+        border: 4px solid #9ECFEB;
+        border-radius: 20px;
+    }
+    
+    .perfis_exemplos img {
+        height: 80%;
+        width: auto;
+    }
+    
+    .perfis_exemplos span {
+        text-align: center;
+        max-width: 40%;
+        font-size: 1vw;
+    }
+    
+    #apoio_link_cadastrar {
+        height: 25%;
+    }
+    
+    #link_cadastrar {
+        text-transform: initial;
+        font-size: 1.1vw;
+        text-align: center;
+    }
+    /* Inicio Formulario */
+    
+    .login_bloco_formulario {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #55C276;
+        border: 6px solid #9ECFEB;
+        border-radius: 20px;
+    }
+    
+    .login_bloco_formulario img {
+        width: 30%;
+        height: auto;
+        margin-top: 2vw;
+    }
+    
+    .formulario_login {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formulario_login input {
+        width: 90%;
+        height: 2.5vw;
+        margin: 0.6vw 0;
+        padding: 0.5vw;
+        font-size: 1.4vw;
+    }

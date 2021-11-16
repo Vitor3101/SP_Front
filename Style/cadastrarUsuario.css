@@ -1,0 +1,49 @@
+/* Tags Comuns */
+
+input {
+    font-size: 1.4vw;
+    padding: 0.4vw;
+    text-align: center;
+}
+
+body {
+    background-color: #5CD17F;
+}
+
+.apoio_cadastrar_usuario {
+    height: 80%;
+    margin-top: 5vw;
+    background-color: #55C276;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw;
+}
+
+#logo_cadastrar_usuario {
+    height: 20vw;
+    width: auto;
+}
+
+.area_cadastrar_usuario {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario_cadastrar_usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.formulario_cadastrar_usuario input {
+    width: 85%;
+    height: 3.2vw;
+    margin: 1vw 0;
+}
+
+.formulario_cadastrar_usuario a {
+    font-weight: bold;
+    text-transform: initial
+}
