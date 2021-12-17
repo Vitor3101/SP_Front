@@ -12,22 +12,27 @@ export default class ConsultaMedico extends Component {
             listaConsultas: [],
             listaPacientes: [],
             idMedico: '',
-            dataConsulta: ''
         }
     };
 
+    listarConsultas = () => {
 
+        fetch('http://localhost:5000/api/Consultas/Minhas')
 
+            .then(reposta => resposta.json())
+            .then(dados => this.setState({ listaConsultas: dados }))
+            .catch(erro => console.log(erro))
+    }
 
-
+    componentDidMount() {
+        this.listarConsultas();
+    };
 
     render() {
         return (
 
             <body>
-
                 <Header />
-
                 <main>
 
                     <div class="apoio_listagem container">
@@ -42,13 +47,18 @@ export default class ConsultaMedico extends Component {
                             </thead>
 
                             <tbody class="tabela_consultas_corpo">
-                                <tr>
-                                    <td>Exemplo Grande Nome de Paciente</td>
-                                    <td>Endocrinologia</td>
-                                    <td>R. Santa Marcelina, 177 - Vila Carmosina, São Paulo</td>
-                                    <td>06/10/2021 15:45</td>
-                                </tr>
-
+                                {
+                                    this.listarConsultas.map((Consulta) => {
+                                        return (
+                                            <tr key={Consulta.idMedico}>
+                                                <td>{Consulta.idMedicoNavigation.idusuarioNavigation.Nome}</td>
+                                                <td>{Consulta.idMedicoNavigation.idEspecialidadeNavigation.especialidade1}</td>
+                                                <td>{Consulta.idMedicoNavigation.idClinicaNavigation.Endereco}</td>
+                                                <td>{Consulta.DataConsulta}</td>
+                                            </tr>
+                                        )
+                                    })
+                                }
                             </tbody>
                         </table>
                     </div>
