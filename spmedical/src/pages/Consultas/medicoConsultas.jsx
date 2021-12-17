@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import axios from 'axiox';
+import axios from 'axios';
 import Header from '../../components/header';
 
 import '../../assets/Style/styles.css';
@@ -10,14 +10,13 @@ export default class ConsultaMedico extends Component {
         super(props);
         this.state = {
             listaConsultas: [],
-            listaPacientes: [],
             idMedico: '',
         }
     };
 
     listarConsultas = () => {
 
-        fetch('http://localhost:5000/api/Consultas/Minhas')
+        axios.Get("http://")
 
             .then(reposta => resposta.json())
             .then(dados => this.setState({ listaConsultas: dados }))
@@ -50,7 +49,7 @@ export default class ConsultaMedico extends Component {
                                 {
                                     this.listarConsultas.map((Consulta) => {
                                         return (
-                                            <tr key={Consulta.idMedico}>
+                                            <tr key={Consulta.idConsulta}>
                                                 <td>{Consulta.idMedicoNavigation.idusuarioNavigation.Nome}</td>
                                                 <td>{Consulta.idMedicoNavigation.idEspecialidadeNavigation.especialidade1}</td>
                                                 <td>{Consulta.idMedicoNavigation.idClinicaNavigation.Endereco}</td>
@@ -62,6 +61,7 @@ export default class ConsultaMedico extends Component {
                             </tbody>
                         </table>
                     </div>
+
                 </main>
             </body>
 
